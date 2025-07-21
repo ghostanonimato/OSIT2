@@ -90,14 +90,3 @@ Resumo das portas suspeitas abertas:
 
 ## Autor
 Yeux
-                                                         88              
-                                                         88              
-                                                         88              
-,adPPYYba, 8b,dPPYba,   ,adPPYba,   ,adPPYba, ,adPPYYba, 88 8b       d8  
-""     `Y8 88P'    "8a a8"     "8a a8"     "" ""     `Y8 88 `8b     d8'  
-,adPPPPP88 88       d8 8b       d8 8b         ,adPPPPP88 88  `8b   d8'   
-88,    ,88 88b,   ,a8" "8a,   ,a8" "8a,   ,aa 88,    ,88 88   `8b,d8'    
-`"8bbdP"Y8 88`YbbdP"'   `"YbbdP"'   `"Ybbd8"' `"8bbdP"Y8 88     Y88'     
-           88                                                   d8'      
-           88                                                  d8'       
-                                  
