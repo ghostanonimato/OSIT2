@@ -1,15 +1,88 @@
-# OSIT2
-Isenção de responsabilidade
+# README.md
+# ScanYeux - Scanner de Portas Suspeitas (OSHINT)
 
-Quaisquer ações e/ou atividades relacionadas ao GHOSTPH são de sua exclusiva responsabilidade. A utilização indevida deste conjunto de ferramentas pode resultar em acusações criminais contra as pessoas em questão. Os contribuidores não serão responsabilizados no caso de qualquer acusação criminal ser movida contra qualquer indivíduo que utilize indevidamente este kit de ferramentas para infringir a lei.
+## Descrição
 
-Este kit de ferramentas contém materiais que podem ser potencialmente prejudiciais ou perigosos para as redes sociais . Consulte as leis da sua província/país antes de acessar, usar ou de qualquer outra forma utilizar isso de maneira errada.
+O **ScanYeux** é um script em Python para escanear portas de um host e identificar portas que normalmente **não deveriam estar abertas** em sistemas comuns. Ele é voltado para fins **educacionais** e **OSINT** (Open Source Intelligence), ajudando a identificar possíveis exposições de serviços sensíveis em redes.
 
-Esta ferramenta é feita apenas para fins educacionais . Não tente violar a lei com nada contido aqui. Se esta é a sua intenção, então dê o fora daqui !
+---
 
-Isso apenas demonstra "como funciona o OSIT2". Você não deve usar indevidamente as informações para obter acesso não autorizado às redes sociais de alguém . No entanto, você pode tentar isso por sua própria conta e risco.
+## Como funciona
 
-O script faz um scan apenas em portas que normalmente não deveriam estar abertas em hosts comuns, ajudando a identificar possíveis exposições perigosas.
-O banner e as mensagens são em português do Brasil.
-O script é simples, não depende de bibliotecas externas e pode ser usado para fins educacionais e OSINT.
-Sempre use apenas em sistemas que você tem autorização para testar!
+- O script solicita ao usuário um IP ou domínio de destino.
+- Ele tenta resolver o nome do host (DNS reverso).
+- Realiza um scan nas portas consideradas suspeitas (ex: FTP, Telnet, SMB, RDP, VNC, etc).
+- Exibe na tela todas as portas abertas que podem representar riscos de segurança.
+
+---
+
+## Portas escaneadas
+
+O script verifica as seguintes portas, associadas a serviços que **raramente devem estar expostos**:
+
+- 21 (FTP)
+- 23 (Telnet)
+- 25 (SMTP)
+- 69 (TFTP)
+- 110 (POP3)
+- 135 (MS RPC)
+- 139 (NetBIOS)
+- 143 (IMAP)
+- 445 (SMB)
+- 512 (exec)
+- 513 (login)
+- 514 (shell)
+- 1433 (MS SQL)
+- 3306 (MySQL)
+- 3389 (RDP)
+- 5900 (VNC)
+- 8080 (Proxy/HTTP-alt)
+
+---
+
+## Como usar
+
+1. **Pré-requisitos:**  
+   - Python 3 instalado no sistema.
+
+2. **Execução:**  
+   Salve o script como `ScanYeux.py` e execute no terminal:
+
+   ```
+   python ScanYeux.py
+   ```
+
+3. **Informe o alvo:**  
+   Digite o IP ou domínio do host que deseja analisar quando solicitado.
+
+---
+
+## Exemplo de uso
+
+```
+Informe o IP ou domínio do alvo para análise OSHINT (ex: 192.168.1.1 ou scanme.nmap.org)
+Alvo: 192.168.1.10
+
+Alvo: 192.168.1.10 (meu-servidor.local)
+
+[+] Escaneando 192.168.1.10 por portas suspeitas abertas...
+
+  [!] Porta 21 (FTP) ABERTA!
+  [!] Porta 445 (SMB) ABERTA!
+
+Resumo das portas suspeitas abertas:
+  - Porta 21 (FTP)
+  - Porta 445 (SMB)
+```
+
+---
+
+## Aviso Legal
+
+> **Use este script apenas em sistemas e redes para os quais você tem permissão explícita!  
+> O uso não autorizado pode ser ilegal.  
+> O objetivo deste projeto é exclusivamente educacional.**
+
+---
+
+## Autor
