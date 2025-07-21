@@ -42,20 +42,20 @@ O script verifica as seguintes portas, associadas a serviços que **raramente de
 
 ## Como usar
 0. **instalação**
-1.   ```
-   f
-   ```
-2. **Pré-requisitos:**  
+```
+git clone https://github.com/ghostanonimato/OSIT2.git
+```
+1. **Pré-requisitos:**  
    - Python 3 instalado no sistema.
 
-3. **Execução:**  
+2. **Execução:**  
    Salve o script como `ScanYeux.py` e execute no terminal:
 
    ```
    python ScanYeux.py
    ```
 
-4. **Informe o alvo:**  
+3. **Informe o alvo:**  
    Digite o IP ou domínio do host que deseja analisar quando solicitado.
 
 ---
