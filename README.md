@@ -44,6 +44,8 @@ O script verifica as seguintes portas, associadas a serviços que **raramente de
 0. **instalação**
 ```
 git clone https://github.com/ghostanonimato/OSIT2.git
+cd OSIT2
+ls
 ```
 1. **Pré-requisitos:**  
    - Python 3 instalado no sistema.
