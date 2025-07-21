@@ -41,18 +41,21 @@ O script verifica as seguintes portas, associadas a serviços que **raramente de
 ---
 
 ## Como usar
-
-1. **Pré-requisitos:**  
+0. **instalação**
+1.   ```
+   f
+   ```
+2. **Pré-requisitos:**  
    - Python 3 instalado no sistema.
 
-2. **Execução:**  
+3. **Execução:**  
    Salve o script como `ScanYeux.py` e execute no terminal:
 
    ```
    python ScanYeux.py
    ```
 
-3. **Informe o alvo:**  
+4. **Informe o alvo:**  
    Digite o IP ou domínio do host que deseja analisar quando solicitado.
 
 ---
